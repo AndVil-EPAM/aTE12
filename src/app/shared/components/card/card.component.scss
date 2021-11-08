@@ -1,0 +1,37 @@
+@import '/src/variables.scss';
+
+.container {
+    margin: 20px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #ccc;
+    h4 {
+        margin: 0;
+        padding: 20px 50px;
+        color: $color-primary;
+        border-radius: 10px 10px 0 0;
+        background-color: $color-secondary;
+    }
+    
+    p {
+        margin: 0;
+        padding: 20px;
+    }
+    span {
+        top: -10px;
+        right: -20px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 12px 6px;
+        position: absolute;
+        border-radius: 50%;
+        &.green {
+            background-color: #01dd1e;
+        }
+        &.red {
+            background-color: #ff0000;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@import '/src/variables.scss';
+
+.modal-container {
+    left: 0;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    height: 100vh;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.651);
+
+    .modal {
+        width: 50%;
+        height: 35%;
+        padding: 40px;
+        position: relative;
+        border-radius: 20px;
+        background-color: #fff;
+
+        span#close-x {
+            top: 30px;
+            right: 30px;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+            position: absolute;
+        }
+    }
+
+    h2 {
+        color: $color-secondary;
+        span {
+            color: $color-primary;
+        }
+    }
+
+    #markets {
+        display: flex;
+        overflow-y: scroll;
+        flex-direction: row;
+
+        .list-item {
+            padding: 10px;
+            min-width: 150px;
+
+            h4 {
+                color: $color-primary;
+            }
+            p b {
+                color: $color-secondary;
+            }
+        }
+    }
+}

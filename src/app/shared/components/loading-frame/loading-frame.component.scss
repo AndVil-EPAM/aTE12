@@ -1,0 +1,16 @@
+.modal-container {
+    left: 0;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    height: 100vh;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.651);
+
+    h4 {
+        color: #fff;
+        font-size: 40px;
+    }
+}

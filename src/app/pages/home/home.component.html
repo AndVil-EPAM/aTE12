@@ -1,0 +1,15 @@
+<app-header></app-header>
+<div class="content">
+    <app-card  *ngFor="let item of response" [data]="item" (click)="showDetailedInfo($event)"></app-card>
+    <app-alert *ngIf="messageError && !response.length" type="error">
+        {{ messageError }}
+    </app-alert>
+    <app-alert *ngIf="!messageError && !response.length" type="info">
+        loading...
+    </app-alert>
+    <app-modal *ngIf="selectedItem" [data]="selectedItem" (closeModal)="selectedItem = null">
+    </app-modal>
+    <app-loading-frame *ngIf="showLoading">
+
+    </app-loading-frame>
+</div>

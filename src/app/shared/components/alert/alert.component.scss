@@ -1,0 +1,18 @@
+@import '/src/variables.scss';
+
+.alert {
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    &.info {
+        color: $color-secondary;
+        border: 2px solid $color-secondary;
+        background-color: #ffc400c9;
+    }
+    &.error {
+        color: #970000;
+        border: 2px solid #970000;
+        background-color: #ff5410d8;
+    }
+}

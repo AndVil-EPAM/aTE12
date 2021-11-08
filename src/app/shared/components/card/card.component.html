@@ -1,0 +1,9 @@
+ <div class="container" (click)="goToCoinDetails()">
+    <h4>{{ data.name }} (<i>{{ data.symbol}}</i>)</h4>
+    <span [class]="isGrowing ? 'green': 'red' ">
+        {{ data.percent_change_24h }}
+    </span>
+    <p>
+        price(USD): {{ data.price_usd | currency }}
+    </p>
+</div>

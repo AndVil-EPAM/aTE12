@@ -1,0 +1,18 @@
+<div class="modal-container">
+    <div class="modal">
+        <span id="close-x" (click)="close()">X</span>
+        <h2>{{ coin.name }} <span>({{ coin.symbol }})</span></h2>
+        <p><b>Price(USD):</b> {{ coin.price_usd | currency }}</p>
+        <p><b>Price(BTC):</b> {{ coin.price_btc | currency }}</p>
+        <div id="markets" *ngIf="data.markets">
+            <div class="list-item" *ngFor="let item of data.markets">
+                <h4>{{ item.name }}</h4>
+                <p><b>Price(USD):</b> {{ item.price_usd | currency }}</p>
+                <p><b>Base:</b> {{ item.base }}</p>
+            </div>
+        </div>
+        <p id="markets" *ngIf="!data.markets">
+            No hay mercados :'( 
+        </p>
+    </div>
+</div>
